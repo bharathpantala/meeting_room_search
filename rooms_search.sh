@@ -9,7 +9,8 @@ echo
 read search
 echo "This is the room available for ur search"
 echo 
-grep "Room no:" $search ./rooms.txt | cut -d, -f1
+a=$(grep $search ./rooms.txt | cut -d, -f1)
+echo "Room no. :" $a
 echo
 echo "Thank you"
  
